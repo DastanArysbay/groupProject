@@ -1,4 +1,4 @@
-# Code for POSTGRESQL
+
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
