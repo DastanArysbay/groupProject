@@ -1,6 +1,6 @@
 # groupProject
 
-# Title -- ⊖
+# Assignment 3
 # Installation -- ⊖
 # Usage -- ⊖
 # Examples -- ⊖
