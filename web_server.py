@@ -15,7 +15,7 @@ def signup(login,password):
     user = UserTable.query.filter_by(login=login, password=password).first_or_404(description='Could not found a user with login and password:  {}'.format(login))
     if auth and auth.password == password and auth.username == login:
         token = jwt.encode({'user':auth.username, 'exp':datetime.utcnow() + timedelta(minutes=30)}, app.config['SECRET_KEY'])
-        string = "Well done! Succsessfully added token on database"
+        string = '''Well done! Succsessfully added token on database. Token: {}'''.format(token)
         update_this = UserTable.query.filter_by(login=login, password=password).first()
         update_this.token = token
         #Заносим токен в базу данных. Обновляем занчение в колонне token в той строке, где записанный логин равен введенному логину
