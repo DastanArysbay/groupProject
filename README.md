@@ -1,16 +1,24 @@
 # Assignment 3
+
 Group project to create a web server in Python using PostgreSQL database.
+
 ## Installation 
+
 To install, you need to download the web_server.py and models.py files from the repository and save them in the same folder. 
+
 ## Usage 
+
 In models.py file you need to provide your data
 ```python
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://YourUsername:YourPassword@localhost/NameOfYourDatabase'
 ```
+
 When you can run web_server.py
 ```python
 C:\<your>\<path>\<to>\<the>\<folder>\web_server.py
 ```
+In /signup/<login>/<password> rote you provide login and password. If they are correct, when 
+
 
 ## Examples 
 
