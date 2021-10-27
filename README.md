@@ -1,6 +1,7 @@
 # Assignment 3
 
 Group project to create a web server in Python using PostgreSQL database.
+Team: Aisha Bazylzhanova(SE-2004), Arysbay Dastan(SE-2004) 
 
 ## Installation 
 
