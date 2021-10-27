@@ -44,7 +44,7 @@ db.session.commit()
 
 def create_app():
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:dastanio2020@localhost/ass3' # не забудь менять имя датабэйс и пароль 
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:dastanio2020@localhost/ass3' 
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db = SQLAlchemy(app)
     def ping_pong():
