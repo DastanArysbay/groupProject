@@ -1,8 +1,31 @@
 # Assignment 3
 Group project to create a web server in Python using PostgreSQL database.
-# Installation -- ⊖
-# Usage -- ⊖
-# Examples -- ⊖
+## Installation 
+To install, you need to download the web_server.py and models.py files from the repository and save them in the same folder. 
+## Usage 
+In models.py file you need to provide your data
+```python
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://YourUsername:YourPassword@localhost/NameOfYourDatabase'
+```
+When you can run web_server.py
+```python
+C:\<your>\<path>\<to>\<the>\<folder>\web_server.py
+```
+
+## Examples 
+
+```python
+C:\Users\abazy>C:\Users\abazy\source\repos\ProjectsPython\assignment3\web_server.py
+ * Serving Flask app 'models' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 930-302-590
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
 
 LICENSE ✔
 
