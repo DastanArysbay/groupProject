@@ -9,17 +9,24 @@ To install, you need to download the web_server.py and models.py files from the 
 ## Usage 
 
 In models.py file you need to provide your data
-```python
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://YourUsername:YourPassword@localhost/NameOfYourDatabase'
-```
+   ```python
+   app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://YourUsername:YourPassword@localhost/NameOfYourDatabase'
+   ```
 
 When you can run web_server.py
-```python
-C:\<your>\<path>\<to>\<the>\<folder>\web_server.py
-```
-In /signup/<login>/<password> rote you provide login and password. If they are correct, when 
+   ```python
+   C:\<your>\<path>\<to>\<the>\<folder>\web_server.py
+   ```
+In /signup/<login>/<password> route you provide login and password. If they are correct when the token is stored in the database. If not, an error message shows up.
 
+If login and password incorrect, when this message shows up
+   ```python
+   Could not found a user with login and password:<login>
+   ```
+Correct login and password stored in your database.   
 
+In /protected route we can check, if the token is correct
+   
 ## Examples 
 
 ```python
@@ -34,7 +41,16 @@ C:\Users\abazy>C:\Users\abazy\source\repos\ProjectsPython\assignment3\web_server
  * Debugger PIN: 930-302-590
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
-
+   
+```python
+http://127.0.0.1:5000/signup/<login>/<password>
+#Well done! Succsessfully added token on database. Token: <tokenvalue>
+```
+   
+```python
+http://127.0.0.1:5000/protected?token=<tokenvalue>
+#Hello, token which is provided is correct
+```
 LICENSE ✔
 
 requirements.txt ✔
