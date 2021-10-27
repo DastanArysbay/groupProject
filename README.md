@@ -17,9 +17,12 @@ When you can run web_server.py
    ```python
    C:\<your>\<path>\<to>\<the>\<folder>\web_server.py
    ```
-In /signup/<login>/<password> route you provide login and password. If they are correct when the token is stored in the database. If not, an error message shows up.
+   
+In /signup route you provide login and password. If they are correct when the token is stored in the database. If not, an error message shows up.
+
 
 Correct login and password stored in your database.   
+
 
 In /protected route we can check, if the token is correct
    
